@@ -1,2 +1,27 @@
-<title>URUPeliss - Una pagina para todos</title>
-<script>window.location.replace("https://urupeliss.github.io");</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>URUPeliss - una plataforma para todos</title>
+</head>
+<body>
+
+<script>
+window.onload = function() {
+    // Obtener la URL actual
+    var url = window.location.href;
+    
+    // Verificar si la URL contiene el signo '='
+    if (url.includes('=')) {
+        // Obtener la parte de la URL después del '='
+        var redirectTo = url.split('=')[1];
+        
+        // Redirigir a la URL especificada
+        window.location.href = redirectTo;
+    }
+}
+</script>
+
+</body>
+</html>
